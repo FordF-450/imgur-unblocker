@@ -12,11 +12,22 @@ It is for people in regions where Imgur blocks its media. The extension does **n
 
 ## Install
 
-1. Open `chrome://extensions` in Chrome (or Edge/Brave).
-2. Turn on **Developer mode** (top-right toggle).
-3. Click **Load unpacked**.
-4. Select this folder (`imgur-unblocker`).
-5. Refresh any page with Imgur images.
+**Option A — download the release**
+
+1. Download `imgur-unblocker-v1.0.0.zip` from [Releases](https://github.com/FordF-450/imgur-unblocker/releases).
+2. Extract it to a folder you'll keep (Chrome loads the extension from that folder).
+3. Open `chrome://extensions` in Chrome (or Edge/Brave).
+4. Turn on **Developer mode** (top-right toggle).
+5. Click **Load unpacked** and select the extracted folder.
+6. Refresh any page with Imgur images.
+
+**Option B — from source**
+
+```bash
+git clone https://github.com/FordF-450/imgur-unblocker.git
+```
+
+Then follow steps 3–6 above, selecting the cloned `imgur-unblocker` folder.
 
 ## Use
 

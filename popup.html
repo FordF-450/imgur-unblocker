@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Imgur Unblocker</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="card">
+      <header class="brand">
+        <img src="icons/icon48.png" alt="" width="32" height="32" />
+        <div>
+          <h1>Imgur Unblocker</h1>
+          <p class="sub">View region-blocked Imgur images</p>
+        </div>
+      </header>
+
+      <label class="toggle-row" for="enabled">
+        <span class="copy">
+          <strong>Unblock images</strong>
+          <small>Load Imgur media through a proxy</small>
+        </span>
+        <span class="switch">
+          <input type="checkbox" id="enabled" />
+          <span class="knob" aria-hidden="true"></span>
+        </span>
+      </label>
+
+      <p id="status" class="status" data-state="idle">Checking this page…</p>
+
+      <p class="note">
+        Works for images and direct image links. Album and gallery pages aren’t
+        supported.
+      </p>
+
+      <footer>
+        <span>v1.0.0</span>
+        <a href="https://imgur.com" target="_blank" rel="noreferrer">Open Imgur</a>
+      </footer>
+
+      <p class="credit">
+        Made by <strong title="Discord username">holstenpils</strong> on Discord
+      </p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

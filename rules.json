@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://external-content.duckduckgo.com/iu/?u=\\0"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://(?:[a-z0-9-]+\\.)?i\\.imgur\\.com/.*",
+      "resourceTypes": ["image", "xmlhttprequest", "main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "regexSubstitution": "https://external-content.duckduckgo.com/iu/?u=\\0"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://(?:www\\.)?imgur\\.com/[^?#]+\\.(?:jpe?g|png|gif|webp|avif)(?:\\?.*)?$",
+      "resourceTypes": ["image", "xmlhttprequest", "main_frame", "sub_frame"]
+    }
+  }
+]
